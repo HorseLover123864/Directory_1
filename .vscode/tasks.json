@@ -1,0 +1,20 @@
+//This is a json comment (JSONC (JSON with comments) - VSCode accepts it for some reason)
+//To run the script press the combination: Ctrl + Shift + B
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Open in Vivaldi",
+            "type": "shell",
+            "command": "D:/New downloads (15-1-2023)/VIVALDI/Application/vivaldi.exe",
+            "args": [
+                "file:///D:/.WEB TEST/Directory_1/index.html"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

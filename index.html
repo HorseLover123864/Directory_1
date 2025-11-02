@@ -1,0 +1,422 @@
+<!--DAILY REMINDER WHEN I OPEN VSCODE-->
+<!--TO RUN THE TASKS.JSON, PRESS THE COMBINATION: CTRL + SHIFT + B-->
+<!--THIS ENTIRE SOLO PROJECT IS DEDICATED TO GUIDING MYSELF THROUGH THE MIST OF PROGRAMMING, LIGHTING HOPES AND DREAMS-->
+
+
+
+
+
+
+
+
+<!--This is a comment-->
+
+<!DOCTYPE html><!--determines the version of HTML, in this case HTML5-->
+
+<html lang ="vi-VN"><!--lang is used to declare the language of the page => assist search engines and browsers-->
+
+<head> <!--contains metadata, does not render visible content but informs the browser and external systems how to interpret and handle the page-->
+
+    <title>This is the title</title><!--The title is what appears on the tab, next to the favicon.-->
+    
+    <meta charset="UTF-8"> <!--describes page properties (charset, author, description, viewport, etc.)-->
+
+    <link rel="stylesheet" type="text/css" href="style.css"/> <!--connects to external files like stylesheets or icons.-->
+    <!--This includes external CSS file, in this case its style.css, {type="text/css"} is optional in HTML5; there are inline CSS, internal CSS and external CSS-->
+
+    <link rel="icon" type="image/x-icon" href="IMAGES/favicon.ico"><!--This is a Favicon, the one little icon on the left side of the webpage title.-->
+
+    <script src="clockwork.js"></script><!--loads JavaScript (often placed in head if it must run early). There are inline Js, internal Js and external Js.-->
+</head>
+
+<body id="body">
+    <h1 style="color: gold; text-shadow: 2px 1px 2px black, 2px 1px 1px darkgoldenrod;">This is the body</h1><br>
+    <!--(text-shadow: offset-x offset-y blur-radius color;) 
+    
+    offset-x → horizontal shadow position (positive = right, negative = left).
+
+    offset-y → vertical shadow position (positive = down, negative = up).
+
+    blur-radius (optional) → how blurry the shadow is (default = sharp).
+
+    color (optional) → color of the shadow (default = text color)-->    
+
+<br>
+    <h2 class="textcenter">Bookmarks</h2><!--BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK--->
+
+
+    <p>About <a class="links" href="#Link">Links</a></p>
+    <p>About <a class="links" href="#Division">Divisions</a></p>
+    <p>About <a class="links" href="#Paragraph&style">Paragraphs and styles</a></p>
+    <p>About <a class="links" href="#Plain text">Plain texts</a></p>
+    <p>About <a class="links" href="#Image&Heading">Images and Headings</a></p>
+    <p>About <a class="links" href="#Button">Buttons</a></p>
+    <p>About <a class="links" href="#table">Tables</a></p>
+<hr>
+    
+
+        <i>This sentence is italicized</i><br>  <!--not semantic-->
+        <b>This sentence is bold</b><br>        <!--not semantic-->
+
+        <em>This sentence is semantically italicized</em><br>
+        <strong>This sentence is semantically bold</strong><br>
+        <!--semantic HTML makes code more meaningful for browsers, search engines, and assistive technologies-->
+        <!--semantic means the element’s name conveys its meaning or role in the document, not just how it looks-->
+
+        <p>Dưới đây là một câu tiếng việt bằng tất cả chữ cái tiếng việt:</p>
+        <p><q>Chú bé đi quán võ, xếp ly rượu ấm, thở hắt, ngỡ ngàng vì phở quê, sẵn sàng ăn thêm</p>
+
+<hr>
+    <h2 id="Link" class="textcenter">Links:</h2><!--LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK-LINK--->
+        
+    
+        <p><a href="https://leetcode.com/explore/" target="_blank" style="color: orange; font-weight: bold;">This</a> is a link that opens in a new tab</p>
+        <p><a href="https://leetcode.com/explore/" target="_self" style="color: red; font-weight: bold;">This</a> is a link that opens in the same tab</p>
+        <p><a href="https://leetcode.com/explore/" target="_parent" style="color: blue; font-weight: bold;">This</a> is a link that opens in the parent frame</p>
+        <p><a href="https://leetcode.com/explore/" target="_top" style="color: greenyellow; font-weight: bold;">This</a> is a link that opens in the full body of the window</p>
+        <!--The href specifies the URL or path that a hyperlink (<a>) or certain other elements (like <link>) points to-->
+        <!-- Common values for 'target':
+        _self → Default. Opens in the same tab.
+
+        _blank → Opens in a new tab/window.
+
+        _parent → Opens in the parent frame.
+
+        _top → Opens in the full body of the window (breaks out of frames).
+
+        framename → Opens in a specific frame if you named it.-->
+    
+<hr>
+    <h2 id="Division" class="textcenter">Divisions:</h2><!--DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION--->   
+
+        
+        <div>A "division" = a grouped element. Short form &lt;div&gt;</div><br>
+        <!--<div> is a generic container element in HTML. Non-semantic, its main purpose is to group other elements together so you can apply CSS styling or JavaScript logic to that group.-->
+        <div class="boxcenter">
+            <div id="idtest">
+                This is a division with an ID. An id is a unique identifier. Used for one single element only.<br>
+                <br>For example: <br>
+                &lt;p id="first"&gt;Paragraph 1&lt;/p&gt; <br>
+                &lt;p id="second"&gt;Paragraph 2&lt;/p&gt;<br>
+            </div>
+        </div>
+    <br>
+    
+<hr>
+    <h2 id="Paragraph&style" class="textcenter">Paragraphs and styles:</h2><!--PARAGRAPH&STYLE-PARAGRAPH&STYLE-PARAGRAPH&STYLE-PARAGRAPH&STYLE-PARAGRAPH&STYLE-PARAGRAPH&STYLE-PARAGRAPH&STYLE--->
+
+        
+        <p>This is a paragraph. Short form &lt;p&gt;</p> <!--Paragraph = semantic meaning, raw text = loose content-->
+        
+    <div class="boxcenter" style="text-wrap: wrap;">
+        <p class="infograph">
+            Evidence That Nighttime Baths Can Be Good:<br>
+                <b>1. Improved Sleep Quality and Faster Sleep Onset:</b><br>
+
+                    Biological cooling effect: Warm baths or showers taken 1-2 hours before bedtime help trigger the body's natural cooling—key for falling asleep faster and sleeping better.<br>
+                    A systematic review found that even 10-minute warm baths (40-42 °C) before bed improve sleep efficiency and reduce time to fall asleep.<br>
+                    Popular Mechanics explains that the warming effect promotes heat loss when you exit the bath, aligning with the circadian rhythm and aiding sleep.<br>
+                    Verywell Health confirms that warming the skin before bed accelerates the core-temperature drop and improves sleep quality.<br>
+                    Time.com notes that evening showers support sleep, reduce sleep onset, and enhance rest when timed and heated properly.<br><br>
+
+                <b>2. Relaxation and Better Sleep Hygiene:<br></b>
+                    A warm bath can help relax muscles, ease stress, and act as a calming bedtime routine or signal to start winding down.<br>
+                    A structured nighttime ritual that includes bathing may support your body's sleep cues and improve overall nightly rest.<br>
+                        <span style="display:block; margin-top: 10px; text-align: end;"><small><cite><b>Source: ChatGPT.</b></bd></cite></small></span>
+                        <!--<span> is an inline container used to group a small piece of text or other inline elements, so you can style or manipulate them with CSS or JavaScript.-->
+
+        </p>
+    </div>
+    <br>
+    
+    <div class="boxcenter" style="text-wrap: wrap;">
+        <p class="infograph">
+                Mass psychogenic illness (MPI), also called mass sociogenic illness, mass psychogenic disorder, 
+                epidemic hysteria or <b>mass hysteria</b>, involves the spread of illness symptoms through a population
+                where there is no infectious agent responsible for contagion.
+                It is the rapid spread of illness signs and symptoms affecting members of a cohesive group, 
+                originating from a nervous system disturbance involving excitation, loss, or alteration of function, 
+                whereby physical complaints that are exhibited unconsciously have no corresponding organic causes that are known.
+                <span style="display:block; margin-top: 10px; text-align: end;"><small><cite><b>Source: Wikipedia.</b></bd></cite></small></span>
+        </p>
+    </div>
+    <br>
+    
+    <div class="boxcenter">
+        <p class="amongus">This is a paragraph with a class. A class is a reusable label. Can be applied to many elements.<br>
+            <br>For example:<br>
+            &lt;p class="highlight"&gt;First&lt;/p&gt; <br>
+            &lt;p class="highlight"&gt;Second&lt;/p&gt;<br>
+        </p>
+    </div>
+    
+        <p style="background-color: blue; color: white; display: inline-block;">This is a paragraph with the background-color attribute with the display of inline-block</p>
+    
+        <p style="font-size: 200%;">This is a paragraph with the font size of 200%</p><br>
+
+        <p style="text-align: left;">This is a paragraph with text align left</p>
+
+        <p style="text-align: center;">This is a paragraph with text align center</p>
+        
+        <p style="text-align: right;">This is a paragraph with text align right</p><br>
+
+        <p style="display:inline-block; border:3px solid;">This is a paragraph with a border of 3px</p> <!--border: [thickness] [style] [color]-->
+
+<hr>
+    <h2 id="Plain text" class="textcenter">Plain texts:</h2> <!--PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT--->
+
+
+
+        <small>This is a small text</small> <!--Reduces the size of the text?--><br>
+        <mark>This is a marked text</mark> <!--Highlighter--><br>
+        <del>This is a deleted text</del> <!--Strikethrough--><br>
+        <ins>This is an inserted text</ins> <!--Underline-->
+        <p>This is a subscript: H<sub>2</sub>O</p> <!--subscript = smaller and lower characters-->
+        <p>This is a superscript<sup>2</sup></p> <!--opposite of subscript-->
+        <q>This is a short quote</q>
+
+        <p>This is a quote block:</p>
+        <blockquote cite="https://www.goodreads.com/quotes", style="text-wrap:inherit; font-size: large; align-self: center;">
+             
+            <em>“I'm selfish, impatient and a little insecure. I make mistakes,
+                I am out of control and at times hard to handle. 
+                But if you can't handle me at my worst,
+                then you sure as hell don't deserve me at my best.”
+                ― Marilyn Monroe</em></blockquote> <!--Quote but block-->
+
+        <p>This is an <abbr title="Abbreviation">Abbr</abbr></p>
+            
+        <p><bdo dir="rtl">This text is written from right to left</bdo></p> <!--bdo = Bi-Directional Override, mainly used for languages like Arabic or Hebrew.-->
+        <p><bdo dir="ltr">This text is written from left to right</bdo></p>
+        <!--basically reverse text-->
+        
+        <p style="color: rgb(255,255,0);">This is a paragraph that uses RGB</p>
+        <!--rgb(red, green, blue)-->
+
+        <p style="color: rgba(255, 255, 0, 0.5);">This is a paragraph that uses RGBA</p>
+        <!--rgba(red, green, blue, alpha); alpha channel for transparency. (0 = fully transparent, 1 = fully opaque)-->
+        
+
+        <p style="color: hsl(100, 0%, 100%);">This is a paragraph that uses HSL</p>
+        <!--hsl(hue, saturation, lightness)-->
+        <!--Hue = angle on color wheel (0–360 → red, green, blue, etc.)-->
+
+        <p style="color: hsla(100, 0%, 100%, 0.5);">This is a paragraph that uses HSLA</p>
+        <!--hsla(hue, saturation, lightness, alpha); alpha channel for transparency. (0 = fully transparent, 1 = fully opaque)-->
+        
+        <p style="color: #ff0000;">This is a paragraph that uses Hexadecimal Notation (HEX values)</p>
+        <!--#RRGGBB (hexadecimal notation for red, green, blue);(00–FF) is equivalent to 0–255 in RGB.-->
+        
+        <p>This below is a pre-formatted text:</p> <!--Looks exactly the same as the one in the coding space-->
+<pre class="pretext" style="border: black solid 1px; display: inline-flex;">
+Time     Action
+10:00    Start
+10:30    Break 
+</pre>
+
+
+<hr>
+    <h2 id="Image&Heading" class="textcenter">Images and Headings:</h2><!--IMAGE&HEADINGS-IMAGE&HEADINGS-IMAGE&HEADINGS-IMAGE&HEADINGS-IMAGE&HEADINGS-IMAGE&HEADINGS--->
+   
+        <div style="display: flex; gap: 15px;">
+        
+            <div title="This is a gif" class="imagett">
+                <img src="IMAGES/horse-alerted.gif" width="125" height="250">
+            </div>
+
+            <div title="This is another gif"><img src="IMAGES/tokai-tokai-teio.gif" width="250" height="250"></div>
+            <div title="This is another gif"><img src="IMAGES/pretty-derby-matikane.gif" width="250" height="250"></div>
+            <div title="This is another gif"><img src="IMAGES/satono-diamond-uma-musume.gif" width="250" height="250"></div>
+
+            <div title="This is an image" class="imagett" > <!--The "tilte" attribute works with every element, it defines extra info when hovered-->
+            
+                <img loading="lazy" src="IMAGES/canhcut.png" alt="This is an alt text" width="100" height="100"> <!--This is an image, alt = alternative text that replaces the unloaded image-->
+            
+            </div><br>
+
+
+            <div title="This is an image link"><a href="https://github.com" target="_blank"><img loading="lazy" src="IMAGES/GitHubicon.png" width="75" height="75" alt="This is a github redirect link" style="border-radius: 50% ;"></a></div>
+            <!--border-radius rounds things up; border-radius: [insert pixels or percentage]-->
+            
+            <div title="This is an image link"><a href="https://www.facebook.com" target="_blank"><img loading="lazy" src="IMAGES/facebookicon.png" width="75" height="75" alt="This is a github redirect link" style="border-radius: 50% ;"></a></div>
+            
+            
+        </div>
+
+        <br>
+        <p>Try clicking on the iphone in the image</p>
+        <div title="this is an image map">
+            <img src="IMAGES/phonedogstaremad.jpg" width="150" height="150" usemap="#testmap">
+                <map name="testmap">
+                    <area shape="poly" coords="10, 75, 30, 150, 70, 150, 50, 75 " href="https://www.apple.com/iphone/" target="_blank" alt="Iphone">
+                    <!--coords for Rectangle: [x1,y1,x2,y2] = top-left and bottom-right ,respectively.
+                        coords for Circle: [x,y,radius] = target 1 point and summon a circle around that point.
+                        coords for Polygon: [x1,y1, x2,y2,... xn,yn] = connect them to form a polygon.
+
+                        Coords only works on <area> inside a <map>.
+                        
+                        <area> can also bind javascript.
+                    -->
+                </map>
+        </div>
+        
+        <br>
+        
+        <!--The HTML <picture> element allows you to display different pictures for different devices or screen sizes.-->
+        <p>The image below will change depends on screen size:</p>
+        <picture >
+            <source media="(min-width: 300px)" srcset="IMAGES/hinhphattuhinh.png"> <!--They are similar to ifs, if the 1st one doesn't fit, go to 2nd and...-->
+            <source media="(min-width: 200px)" srcset="IMAGES/14-8-2023.jpg">
+            <img src="IMAGES/bye.png" style="width: 300px;">
+        </picture>
+
+            <!-- When to use this bitch:
+            1. Bandwidth
+            If you have a small screen or device, it is not necessary to load a large image file. 
+            The browser will use the first <source> element with matching attribute values, and ignore any of the following elements.
+
+            2. Format Support
+            Some browsers or devices may not support all image formats. 
+            By using the <picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and 
+            ignore any of the following elements-->
+
+        <br>
+        <p><img src="IMAGES/canhcut.png" style="float:left; width: 30px; height: 30px;" title="image">This penguin floats to the left of the text</p>
+        <br>
+
+        <p>This will redirect to a background image test:<a href="backgroundtest.html" target="_blank" class="links">Background_Test</a> </p>
+
+        <br>
+        <div id="headings">
+            <h1>This is the first heading</h1> <!--This is the largest size-->
+            <h2>This is the second heading</h2>
+            <h3>This is the third heading</h3>
+            <h4>This is the fourth heading</h4>
+            <h5>This is the fifth heading</h5>
+            <h6>This is the sixth heading</h6> <!--This is the smallest size-->
+        </div><br>
+
+
+            <p>This is an artwork by me:</p>
+        
+                <div class="boxcenter"><img loading="lazy" src="IMAGES/masterpiece.png" alt="Finest piece of art" width="600" height="300"></div>
+        
+            <p style="text-align: center;"><cite>The combination of everything you could ever imagine</cite> by JoeHockens</p><br> <!--Cite is used to define the title of a creative work-->
+
+
+
+<hr>
+    <h2 id="Button" class="textcenter">Buttons:</h2> <!--BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-->
+
+        <p>These buttons work on click, click to see what they do:</p>
+        <div style="display: flex; gap:15px">
+            <button class="button" title="Alert" onclick="hello()"><img class="png" src="IMAGES/canhcut.png"></button>
+            <button class="button" title="Dictionary" onclick="goCambridge()"><img class="png" src="IMAGES/CambridgeDictionaryIcon.png"></button>
+            
+            <button class="button" title="Pop up test" onclick="showPopup()">Pop up</button>
+            <div id="popup">Successful</div>
+
+            <button class="button" title="Print console" onclick="print()"><img class="png" src="IMAGES/console-21.png"></button>
+            <!--Window.location.href=""; is used for replacing the current page with the new URL
+                whereas Window.open("...","_blank/_self"); is used to open the link directly to a new tab or same tab, similar to target="_blank/_self"-->
+
+            <div class="fixeddarkbutton"><button class="button" title="Dark Mode" onclick="DarkMode()">Go dark</button></div>
+        </div><br>
+
+
+        <p>These buttons below work on hover, F12 to check console:</p>
+        <div style="display: flex; gap:20px">
+            <button class="button" title="MouseEnter" onmouseenter="mouseEnter()">Enter</button><!--Prints on enter-->
+            <button class="button" title="Mouseleave" onmouseleave="mouseLeave()">Leave</button><!--Prints on leave-->
+            <button class="button" title="MouseMove" onmousemove="mouseHover()">Hover</button> <!--Prints everytime the mouse moved inside of it-->
+        </div>
+        
+        <!--SPECIAL BUTTONS--> <!--THEY ARE ESPECIALLY IMPORTANT FOR NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--> 
+        <div class="fixedupbuttonbox"><button class="button" title="Go back down" onclick="goUp()">Down</button></div> 
+        <div class="fixeddownbuttonbox"><button class="button" title="Go back up" onclick="goDown()">Up</button></div> 
+        <!---------------------------------------------------------------------------------------------------------------->
+<hr>
+    <h2 id="table" class="textcenter">Tables:</h2>
+        <p>Tables allow web developers to arrange data into rows and columns.</p>
+        <p>A table in HTML consists of table cells inside rows and columns.</p>
+        <br>
+        <h3>Table Cells:</h3>
+        <p>A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.</p>
+        <p>Each table cell is defined by a &lt;<abbr title="table data">td</abbr>&gt; and a &lt;/td&gt; tag.</p>
+        <br>
+        <h3>Table rows:</h3>
+        <p>Each table row starts with a &lt;tr&gt; and ends with &lt;/tr&gt;</p>
+        <p>There are times when a row can have less or more cells than another. You will learn about that in a later chapter.</p>
+        <br>
+        <h3>Table headers:</h3>
+        <p>Sometimes you want your cells to be table header cells. In those cases use the &lt;<abbr title="table header">th</abbr>> tag instead of the &lt;td> tag:</p>
+        <!--Doing styles for tables this way are faster imo.-->
+        <!--The first line in <style> is calling the names.-->
+        <p>This below is a table:</p>
+
+        <table class="testtable" style="width: 100%;">
+            <tr><!--Row 1, can add borders inside rows-->
+                <th>Header 1</th><!--Table headers-->
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+
+            <tr><!--Row 2-->
+                <td>Cell 4</td><!--Table cells-->
+                <td>Cell 5</td>
+                <td>Cell 6</td>
+            </tr>
+           
+            <tr><!--Row 3-->
+                <td>Cell 7</td>
+                <td>Cell 8</td>
+                <td>Cell 9</td>
+            </tr>
+        </table>
+        <br>
+    <!--If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border:-->
+    <p>Each cell can be set a background color.</p>    
+    
+    <table class="tablebackground" style="width: 100%;">
+        <tr>
+            <th class="theading">First Name</th>
+            <th class="theading">Last Name</th>
+            <th class="theading" style="width: 60%;">Phone Number</th> <!--changes how wide the cell can be, takes up other spaces-->
+        </tr>
+        <tr style="height: 100px;"> <!--The height changes the height of course-->
+            <td>This is a cell</td>
+            <td>This is cell 2</td>
+            <td>This is the perfect cell</td>
+        </tr>
+    </table>
+    <br>
+    
+    <p>With the border-radius property, the borders get rounded corners</p>
+    <table class="roundborder" style="width: 50%;">
+        <tr>
+           <th style="border:1px solid black; border-radius:10px;">Border radius test</th>
+        </tr>
+    </table>
+    <br>
+
+    <p>With the border-style property, you can set the appearance of the border.</p>
+    <table class="borderstyle" style="width: 50%;">
+        <tr>
+            <th style="border:1px solid black; border-style: dotted;">This is a border style</th>
+        </tr>
+    </table>
+
+
+
+
+<hr>
+        <div>
+            <address style="display:inline-block ;border: 3px solid rgb(255, 0, 0); color: rgb(0, 140, 255); margin: 5px; padding: 10px"> <!--defines the contact information for the author/owner of a document or an article, it can be anything: email address, URL, physical address, phone number, social media handle, etc-->
+                This is an address<br>
+                Written by JoeHockens<br>
+                Check me out on discord: <a href="https://discord.gg/kg9Ey3cJ" target="_blank" style="color: darkblue;">MyVilon123</a>
+            </address>
+        </div>
+        <br>
+</body>
+</html>
