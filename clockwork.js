@@ -41,7 +41,7 @@ function DarkMode(){
 */
 }
 
-function goDown(){
+function goUp(){
     window.scrollTo({top:0, left:0, behavior: "smooth" }); //window.scrollTo(x, y)
     /*Takes 2 arguments:
     x = horizontal position(pixels from the left)
@@ -50,7 +50,7 @@ function goDown(){
     */
 }
 
-function goUp(){
+function goDown(){
     window.scrollTo({top: document.body.scrollHeight, left:0, behavior: "smooth" }); //window.scrollTo(x, y)
     /*Takes 2 arguments:
     x = horizontal position(pixels from the left)

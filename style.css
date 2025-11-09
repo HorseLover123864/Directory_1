@@ -14,14 +14,18 @@ Flexbox usage:
 /*Websites' default font-family is Times New Roman*/
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+:root {
+    --a: url("IMAGES/BACKGROUND.png");
+} /*THIS IS HOW TO DEFINE A VARIABLE IN CSS*/
+
 body{
-    background: white;
+    background-image: var(--a);
     color: black;
     font-family: Arial, Helvetica, sans-serif; /*sets new default font, the original default font is Times New Roman.*/
 }
 
 body.dark{
-    background: rgb(49, 55, 105);
+    background: rgb(55, 55, 68);
     color:white;
 }
 
@@ -68,33 +72,62 @@ body.dark .textcenter{
 
 .button{
     display: flex;
-    gap: 10px;
+    justify-content: center;
     align-items: center;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    /*color: aliceblue;
-   
-    border-width: 1.5px;
-    box-shadow: 1px 1px darkblue;
+    border-radius: 50%;           
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.25);
+    border-width: 0.15px;
+   /*box-shadow: 1px 1px darkblue;
     background: linear-gradient(to top, rgb(17, 128, 255), cyan);
     margin: 0 auto;*/
 }
 
+.funcbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;           
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0,0.45); /**/
+    border-width: 0.15px;
+    background: linear-gradient(to top, rgb(0, 126, 236), rgb(0, 255, 255));
+
+}
+
+.fixedposbutton{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+}
+
 .fixedupbuttonbox{
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
     position:fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
 }
 
 .fixeddownbuttonbox{
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
     position:fixed;
-    bottom: 80px;
-    right: 20px;
+    bottom: 70px;
+    right: 10px;
 }
 
 .fixeddarkbutton{
@@ -103,6 +136,9 @@ body.dark .textcenter{
     position:fixed;
     top: 15px;
     right: 20px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.25);
+
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -112,13 +148,14 @@ body.dark .textcenter{
 }
 
 #popup{ /*general popup*/
-    display: none;
+    display: none; /*change the display to none to hide.*/
     position: fixed;
     top: 80px;
     right: 10px;
-    padding: 5px;
-    background: green;
-    border: 1px solid black;
+    padding: 10px;
+    background: rgb(0, 255, 119);
+    border: 1px solid rgb(212, 212, 212);
+    
 }
 
 .amongus{
