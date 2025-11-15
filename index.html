@@ -167,27 +167,36 @@
 
 
 
-        <small>This is a small text</small> <!--Reduces the size of the text?--><br>
-        <mark>This is a marked text</mark> <!--Highlighter--><br>
-        <del>This is a deleted text</del> <!--Strikethrough--><br>
-        <ins>This is an inserted text</ins> <!--Underline-->
-        <p>This is a subscript: H<sub>2</sub>O</p> <!--subscript = smaller and lower characters-->
-        <p>This is a superscript<sup>2</sup></p> <!--opposite of subscript-->
-        <q>This is a short quote</q>
+        <small>This is a small text, uses &lt;small&gt;,&lt;/small&gt;</small> <!--Reduces the size of the text?--><br>
+        <mark>This is a marked text, uses &lt;mark&gt;,&lt;/mark&gt;</mark> <!--Highlighter--><br>
+        <del>This is a deleted text, uses &lt;del&gt;,&lt;/del&gt;</del> <!--Strikethrough--><br>
+        <ins>This is an inserted text, uses &lt;ins&gt;,&lt;/ins&gt;</ins> <!--Underline-->
+        <p>This is a subscript: H<sub>2</sub>O, uses &lt;sub&gt;,&lt;/sub&gt;</p> <!--subscript = smaller and lower characters-->
+        <p>This is a superscript<sup>2</sup>, uses &lt;sup&gt;,&lt;/sup&gt;</p> <!--opposite of subscript-->
+        <q>This is a short quote, uses &lt;q&gt;,&lt;/q&gt;</q>
 
-        <p>This is a quote block:</p>
-        <blockquote cite="https://www.goodreads.com/quotes", style="text-wrap:inherit; font-size: large; align-self: center;">
+        <p>This is a quote block,, uses &lt;blockquote&gt;,&lt;/blockquote&gt;:</p>
+        <blockquote cite="https://www.goodreads.com/quotes", style="text-wrap:inherit; font-size: large; align-self: center; line-height: 1.3;">
              
             <em>“I'm selfish, impatient and a little insecure. I make mistakes,
                 I am out of control and at times hard to handle. 
                 But if you can't handle me at my worst,
                 then you sure as hell don't deserve me at my best.”
-                ― Marilyn Monroe</em></blockquote> <!--Quote but block-->
+                ― Marilyn Monroe
+            </em><br><br><br>
+            
+            <em>
+                "Whatever you do at the crossroads, don't turn left."
+            </em>
 
+            </blockquote> <!--Quote but block-->
+
+            
+        
         <p>This is an <abbr title="Abbreviation">Abbr</abbr></p>
             
-        <p><bdo dir="rtl">This text is written from right to left</bdo></p> <!--bdo = Bi-Directional Override, mainly used for languages like Arabic or Hebrew.-->
-        <p><bdo dir="ltr">This text is written from left to right</bdo></p>
+        <p><bdo dir="rtl">This text is written from right to left</bdo>, uses &lt;bdo&gt; with property: dir="rtl",&lt;/bdo&gt;; also known as Bi-Directional Override.</p> <!--bdo = Bi-Directional Override, mainly used for languages like Arabic or Hebrew.-->
+        <p><bdo dir="ltr">This text is written from left to right</bdo>, same but dir="ltr".</p>
         <!--basically reverse text-->
         
         <p style="color: rgb(255,255,0);">This is a paragraph that uses RGB</p>
@@ -207,12 +216,12 @@
         <p style="color: #ff0000;">This is a paragraph that uses Hexadecimal Notation (HEX values)</p>
         <!--#RRGGBB (hexadecimal notation for red, green, blue);(00–FF) is equivalent to 0–255 in RGB.-->
         
-        <p>This below is a pre-formatted text:</p> <!--Looks exactly the same as the one in the coding space-->
-<pre class="pretext" style="border: black solid 1px; display: inline-flex;">
+        <p>This below is a pre-formatted text, which looks/positions exactly the same as the code:</p> <!--Looks exactly the same as the one in the coding space-->
+    <pre style="color: red; text-shadow: 1px 1px 1px;">
 Time     Action
 10:00    Start
 10:30    Break 
-</pre>
+    </pre>
 
 
 <hr>
@@ -333,8 +342,8 @@ Time     Action
         </div>
         
         <!--SPECIAL BUTTONS--> <!--THEY ARE FOR NAVIGATION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--> 
-        <div class="fixedupbuttonbox"><button class="funcbutton" title="Go back down" onclick="goDown()"><img src="IMAGES/chevronup-2.svg" style="transform: rotate(180deg);"></button></div> 
-        <div class="fixeddownbuttonbox"><button class="funcbutton" title="Go back up" onclick="goUp()"><img src="IMAGES/chevronup-2.svg"></button></div> 
+        <div class="fixedupbuttonbox"><button class="funcbutton" title="Go back down" onclick="goDown()"><img src="IMAGES/chevron-down-4.svg"></button></div> 
+        <div class="fixeddownbuttonbox"><button class="funcbutton" title="Go back up" onclick="goUp()"><img src="IMAGES/chevron-up-4.svg"></button></div> 
         <!---------------------------------------------------------------------------------------------------------------->
 <hr>
     <h2 id="table" class="textcenter">Tables:</h2>
@@ -412,7 +421,7 @@ Time     Action
 
 <hr>
         <div>
-            <address style="display:inline-block ;border: 3px solid rgb(255, 0, 0); color: rgb(0, 140, 255); margin: 5px; padding: 10px"> <!--defines the contact information for the author/owner of a document or an article, it can be anything: email address, URL, physical address, phone number, social media handle, etc-->
+            <address class="address"> <!--defines the contact information for the author/owner of a document or an article, it can be anything: email address, URL, physical address, phone number, social media handle, etc-->
                 This is an address<br>
                 Made by [NAME]<br>
                 Check me out on discord: <a href="https://discord.gg/kg9Ey3cJ" target="_blank" style="color: darkblue;">MyVilon123</a>
