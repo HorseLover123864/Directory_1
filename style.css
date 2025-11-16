@@ -226,9 +226,12 @@ body.dark #idtest{
     padding: 7px;
 }
 
+
+.testtable3{
+    border-collapse: collapse;
+}
 .testtable3 tr:hover{
     background-color: lightyellow;
-    border-collapse: collapse;
     width: 100%;
 }
 
