@@ -211,35 +211,58 @@ body.dark #idtest{
 }
 
 
-#headings{
-    color:aqua;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-}
-
 .imagett{
     color:lightblue;
     font-size: small;
 }
 
-.testtable th,td{
+.testtable{
     border-collapse: collapse;
-    border: 1px solid black;
+    width: 100%;
 }
 
-.tablebackground th{ 
-    border-collapse:collapse;
-    border: 1px solid white;
+.testtable th, .testtable td{
+    border: 1px black solid;
+    padding: 7px;
 }
 
-.theading{
+.testtable3 tr:hover{
+    background-color: lightyellow;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.testtable3 th, .testtable3 td{
+    border: 1px black solid;
+    padding: 7px;
+}
+
+.testtable2{
+    border-collapse: collapse;
+}
+
+.testtable2 th, .testtable2 td{
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+
+.theading th{
     background-color: aquamarine;
 }
 
 .address{
     display: inline-block;
     border: 3px blue solid;
+    padding: 8px;
+}
 
+#tablestripes tr:nth-child(even){ /*#[Id] [child element of that Id]:nth-child(even)*/
+    background-color: lightcoral;
+}
+
+#tablestripes2 th:nth-child(even), #tablestripes2 td:nth-child(even){ /*For some reason it requires additional arguments(?) for the vertical stripes?*/
+    background-color: lightcoral;
 }
 /*This specifically cannot be used with width*/
 /*th, td{  
