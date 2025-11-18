@@ -52,8 +52,9 @@
     <p>About <a class="links" href="#Image&Heading">Images and Headings</a></p>
     <p>About <a class="links" href="#Button">Buttons</a></p>
     <p>About <a class="links" href="#table">Tables</a></p>
+    <p>About <a class="links" href="#lists">Lists</a></p>
 <hr>
-    
+    <h2>The absolute basics:</h2>
 
         <i>This sentence is italicized</i><br>  <!--not semantic-->
         <b>This sentence is bold</b><br>        <!--not semantic-->
@@ -253,7 +254,7 @@ Time     Action
         </div>
 
         <br>
-        <h4>Try clicking on the iphone in the image</h4>
+        <h4>Try clicking on the iphone in the image below:</h4>
         <div title="this is an image map">
             <img src="IMAGES/phonedogstaremad.jpg" width="150" height="150" usemap="#testmap">
                 <map name="testmap">
@@ -279,7 +280,7 @@ Time     Action
             <img src="IMAGES/bye.png" style="width: 300px;">
         </picture>
 
-            <!-- When to use <source> or whatever:
+            <!-- When to use whatever is this?:
             1. Bandwidth
             If you have a small screen or device, it is not necessary to load a large image file. 
             The browser will use the first <source> element with matching attribute values, and ignore any of the following elements.
@@ -611,7 +612,56 @@ Time     Action
                 <td>Cell 9</td>
             </tr>
         </table>
+    <h3>Colgroup:</h3>
+    <p>Use the &lt;colgroup&gt; and &lt;col&gt; elements to style the first two columns of a table.</p><br>
+    <p>Note: the &lt;colgroup&gt; tag must be a child of the &lt;table&gt; element and should be placed before any other table elements. Only placed after the &lt;caption&gt; element if present.</p><br>
+    <p>There is a very limited number of CSS properties that are allowed to be used in the colgroup:</p>
+    <ul>
+        <li>Width</li>
+        <li>Visibility</li>
+        <li>background</li>
+        <li>border</li>
+    </ul>
+    <table class="testtable">
+        <colgroup>
+            <col span="2" style="background-color: lightcoral;"> <!--span is the number of columns to color-->
+            <col span="3" style="background-color: lightblue;"> <!--multiple cols stack on eachother, sideways.-->
+            <col span="1" style="visibility: collapse;"><!--To make a column in the middle with styles but not the one before it, try doing col span="2" but no styles or anything, only in the second col should you add any styles.-->
+        </colgroup>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+                <th>Header 5</th>
+                <th>Header 6</th>
+                <th>Header 7</th>
+            </tr>
 
+            <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+                <td>Cell 6</td>
+                <td>Cell 7</td>
+            </tr>
+            
+            <tr>
+                <td>Cell 8</td>
+                <td>Cell 9</td>
+                <td>Cell 10</td>
+                <td>Cell 11</td>
+                <td>Cell 12</td>
+                <td>Cell 13</td>
+                <td>Cell 14</td>
+            </tr>
+        </table>
+<hr>
+    <h1 id="lists" class="textcenter">Lists:</h1> <!--LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS--->
+    <p>HTML lists allow web developers to group a set of related items in lists.</p>
+    
 <hr>
         <div>
             <address class="address"> <!--defines the contact information for the author/owner of a document or an article, it can be anything: email address, URL, physical address, phone number, social media handle, etc-->
