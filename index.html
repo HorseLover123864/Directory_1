@@ -44,15 +44,17 @@
 <br>
     <h1 class="textcenter">Bookmarks</h1><!--BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK--->
 
-
-    <p>About <a class="links" href="#Link">Links</a></p>
-    <p>About <a class="links" href="#Division">Divisions</a></p>
-    <p>About <a class="links" href="#Paragraph&style">Paragraphs and styles</a></p>
-    <p>About <a class="links" href="#Plain text">Plain texts</a></p>
-    <p>About <a class="links" href="#Image&Heading">Images and Headings</a></p>
-    <p>About <a class="links" href="#Button">Buttons</a></p>
-    <p>About <a class="links" href="#table">Tables</a></p>
-    <p>About <a class="links" href="#lists">Lists</a></p>
+    <ul>
+        <li>About <a class="links" href="#Link">Links</a></li>
+        <li>About <a class="links" href="#Division">Divisions</a></li>
+        <li>About <a class="links" href="#Paragraph&style">Paragraphs and styles</a></li>
+        <li>About <a class="links" href="#Plain text">Plain texts</a></li>
+        <li>About <a class="links" href="#Image&Heading">Images and Headings</a></li>
+        <li>About <a class="links" href="#Button">Buttons</a></li>
+        <li>About <a class="links" href="#table">Tables</a></li>
+        <li>About <a class="links" href="#lists">Lists</a></li>
+    </ul>
+    
 <hr>
     <h2>The absolute basics:</h2>
 
@@ -661,7 +663,80 @@ Time     Action
 <hr>
     <h1 id="lists" class="textcenter">Lists:</h1> <!--LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS-LISTS--->
     <p>HTML lists allow web developers to group a set of related items in lists.</p>
-    
+    <p>There are three types of lists: <b>Unordered lists</b>, <b>Ordered lists.</b> and <b>Description lists</b></p>
+    <br>
+    <h2>Unordered List:</h2>
+    <p>An unordered list starts with the &lt;ul&gt; tag; and each list item starts with the &lt;li&gt; tag. The list items will be marked with bullets (small black circles) by default:</p>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+    <p>The CSS list-style-type property is used to define the style of the list item marker. It can have one of the following values:</p>
+    <br>
+    <table class="examtable" id="examtablestripes">
+        <tr>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>disc</td>
+            <td>Sets the list item marker to a bullet (default).</td>
+        </tr>
+        <tr>
+            <td>circle</td>
+            <td>Sets the list item marker to a circle.</td>
+        </tr>
+        <tr>
+            <td>square</td>
+            <td>Sets the list item marker to a square.</td>
+        </tr>
+        <tr>
+            <td>none</td>
+            <td>The list items will not be marked.</td>
+        </tr>
+    </table>
+    <br>
+    <p>Examples:</p>
+    <ul style="list-style-type: disc;">
+        <li>a</li>
+    </ul>
+    <ul style="list-style-type: circle;">
+        <li>b</li>
+    </ul>
+    <ul style="list-style-type: square;">
+        <li>c</li>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li>d</li>
+    </ul>
+
+    <br>
+    <h2>Ordered List:</h2>
+    <p>An ordered list starts with the &lt;ol&gt; tag; and each list item starts with the &lt;li&gt; tag. The list items will be marked with numbers by default:</p>
+    <br>
+    <ol>
+        <li>monkey</li>
+        <li>monkey</li>
+        <li>monkey</li>
+        <li>monkey</li>
+        <li>monkey</li>
+    </ol>
+    <br>
+    <h2>Description List:</h2>
+    <p>A description list is a list of terms, with a description of each term. The &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term (name), and the &lt;dd&gt; tag describes each term:</p>
+    <br>
+    <dl>
+        <dt>Drinks:</dt>
+        <dd>- Olaf</dd>
+        <dd>- Jayce</dd>
+        <dt>Food:</dt>
+        <dd>- Red hot chili pepper.</dd>
+        <dd>- Higashikata Josuke's hair.</dd>
+    </dl>
+
 <hr>
         <div>
             <address class="address"> <!--defines the contact information for the author/owner of a document or an article, it can be anything: email address, URL, physical address, phone number, social media handle, etc-->

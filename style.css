@@ -17,6 +17,9 @@ Flexbox usage:
 :root {
     --a: url("IMAGES/BACKGROUND.png");
 } /*THIS IS HOW TO DEFINE A VARIABLE IN CSS*/
+html{
+    box-sizing: border-box; /*box-sizing: content-box is the default (width & height apply only to the content area). Whereas box-sizing: border-box (width & height include the padding and the border)*/
+}
 
 body{
     background-color: rgb(230,230,175);
@@ -25,17 +28,21 @@ body{
     background-size: cover;*/
     color: black;
     font-family: Arial, Helvetica, sans-serif; /*sets new default font, the original default font is Times New Roman.*/
+
 }
 
 body.dark{
     background: rgb(55, 55, 68);
     color:white;
 }
-
-body > h2{ /*gets all the h2 tags 1 level deep in body, think of it as mining down 1 level and looking for the things you need.*/
+/*
+body > h2{
     color: red;
     text-shadow: 1px 1px black;
 }
+*/
+/*gets all the h2 tags 1 level deep in body, think of it as mining down 1 level and looking for the things you need.*/
+/*CSS DOES NOT ALLOW A COMMENT INSIDE A COMMENT.*/
 
 .backgroundtest{
     background-image: url(IMAGES/BACKGROUND.png);
@@ -217,6 +224,24 @@ body.dark #idtest{
     font-size: small;
 }
 
+.examtable{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.examtable td{
+    padding-left: 12px;
+}
+
+.examtable th{
+    text-align: left;
+}
+
+.examtable td,.examtable th{
+    padding: 7px;
+    border-bottom: 1px solid black;
+}
+
 .testtable{
     border-collapse: collapse;
     width: 100%;
@@ -225,6 +250,13 @@ body.dark #idtest{
 .testtable th, .testtable td{
     border: 1px black solid;
     padding: 7px;
+}
+
+#examtablestripes tr:nth-child(odd){
+    background-color: lightcyan;
+}
+#examtablestripes tr:nth-child(even){
+    background-color: azure;
 }
 
 
